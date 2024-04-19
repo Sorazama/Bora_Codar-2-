@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 7</title>
+</head>
+<body>
+    <script>
+        let quantidade = parseInt(prompt("Digite o número de maçãs compradas:"))
+        let precoUnitario;
+        if (quantidade < 12) {
+            precoUnitario = 3.50
+        } else {
+            precoUnitario = 2.50
+        }
+        let valorTotal = quantidade * precoUnitario
+        alert("O valor total da compra é: R$ " + valorTotal.toFixed(2))
+
+    </script>
+</body>
+</html>

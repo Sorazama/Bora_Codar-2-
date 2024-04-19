@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 10</title>
+</head>
+<body>
+    <script>
+        let numeroLados = parseInt(prompt("Digite o número de lados do polígono:"))
+        let medidaLado = parseFloat(prompt("Digite a medida do lado do polígono (em cm):"))
+        let mensagem
+
+        switch (numeroLados) {
+            case 3:
+                mensagem = "TRIÂNGULO"
+                let perimetroTriangulo = numeroLados * medidaLado
+                mensagem += "\nPerímetro: " + perimetroTriangulo.toFixed(2) + " cm"
+                break;
+            case 4:
+                mensagem = "QUADRADO"
+                let areaQuadrado = medidaLado * medidaLado;
+                mensagem += "\nÁrea: " + areaQuadrado.toFixed(2) + " cm²"
+                break;
+            case 5:
+                mensagem = "PENTÁGONO"
+                break;
+            default:
+                if (numeroLados < 3) {
+                    mensagem = "NÃO É UM POLÍGONO"
+                } else {
+                    mensagem = "POLÍGONO NÃO IDENTIFICADO"
+                }
+        }
+        alert(mensagem);
+
+    </script>
+</body>
+</html>
